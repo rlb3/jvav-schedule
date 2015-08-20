@@ -1,9 +1,5 @@
-{{#link-to 'admin.workers.new'}}New Worker{{/link-to}}
-
-{{outlet}}
-
-<ul>
-{{#each model as |worker|}}
-<li>{{#link-to 'admin.workers.worker' worker}}{{worker.fullName}} - {{worker.email}}{{/link-to}}</li>
-{{/each}}
+<ul class="list-group">
+  {{#each model as |worker|}}
+  <li class="list-group-item">{{#link-to 'admin.worker' worker}}{{worker.fullName}} - {{worker.email}}{{/link-to}}</li>
+  {{/each}}
 </ul>
