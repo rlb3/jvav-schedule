@@ -1,18 +1,1 @@
-<form {{action "create_worker" on="submit"}}>
-  <div class="form-group">
-    <label for="first_name">First Name</label>
-    {{bs-input value=model.firstName id="first_name" placeholder="First Name"}}
-  </div>
-
-  <div class="form-group">
-    <label for="last_name">Last Name</label>
-    {{bs-input value=model.lastName id="last_name" placeholder="Last Name"}}
-
-  </div>
-  
-  <div class="form-group">
-    <label for="email">Email address</label>
-    {{bs-input value=model.email id="email" placeholder="Email"}}
-  </div>
-  <button type="submit" class="btn btn-default btn-primary">Submit</button>
-</form>
+{{worker-form firstName=model.firstName lastName=model.lastName email=model.email action="create_worker"}}
