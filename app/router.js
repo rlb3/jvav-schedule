@@ -10,7 +10,9 @@ Router.map(function() {
     this.route('workers');
     this.route('new_worker', { path: '/workers/new' });
     this.route('worker', { path: '/workers/:worker_id' });
+    this.route('new_schedule', { path: 'schedule/new'});
   });
+  this.route('schedule', { path: '/'});
 });
 
 export default Router;
